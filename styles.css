@@ -1,0 +1,384 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1, h2, p {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+a {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: #1f1f1f;
+    padding: 15px 20px;
+    border-bottom: 2px solid #2c2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+header nav a {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #90caf9;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #bbdefb;
+}
+
+
+form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #1e88e5;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1565c0;
+}
+
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.car-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.car-card p {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.car-card a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1e88e5;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.car-card a:hover {
+    background-color: #1565c0;
+}
+
+
+.car-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.car-details-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.car-details {
+    flex: 2;
+}
+
+.car-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car-details p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #bdbdbd;
+}
+
+.booking-form {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.booking-form input, .booking-form button {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.booking-form button {
+    background-color: #1e88e5;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #1565c0;
+}
+
+.toggle-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-button {
+    background-color: #007bff; 
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.toggle-button:active {
+    background-color: #003f7f; 
+    transform: scale(0.95); 
+}
+
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.left p {
+    color: #bbbbbb;
+    font-size: 12px;
+    margin: 0;
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #bbdefb;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.right .menu a {
+    margin-left: 10px;
+}
+
+.right .welcome {
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.logout {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.logout:hover {
+    color: #ff0000;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left, .center, .right {
+        flex: none;
+    }
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.add-car-section,
+.bookings-section {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.add-car-section form label,
+.bookings-section table {
+    margin-top: 15px;
+}
+
+.bookings-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bookings-section table th,
+.bookings-section table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+.bookings-section table th {
+    background-color: #2e2e2e;
+}
+
+.bookings-section button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bookings-section button:hover {
+    background-color: #1565c0;
+}
